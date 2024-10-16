@@ -1,6 +1,6 @@
 -- creating tables here
 
--- temple table.
+-- pilgrimage table.
 CREATE TABLE pilgrimage (
     pilgrimage_id INT PRIMARY KEY AUTO_INCREMENT,
     pilgrimage_name VARCHAR(255),
@@ -11,7 +11,6 @@ CREATE TABLE pilgrimage (
     country VARCHAR(255),
     committee VARCHAR(255),
     offerings VARCHAR(255),
-    head_priest VARCHAR(255),
     deity VARCHAR(255),
     opening_month VARCHAR(255),
     website VARCHAR(255),
@@ -33,4 +32,34 @@ CREATE TABLE guide_company (
     email VARCHAR(255),
     website VARCHAR(255),
     rating DECIMAL(3,2)
+);
+
+
+CREATE TABLE hotel (
+  hotel_id INT PRIMARY KEY AUTO_INCREMENT,
+  hotel_name VARCHAR(255),
+  address VARCHAR(255),
+  city VARCHAR(255),
+  state VARCHAR(255),
+  country VARCHAR(255),
+  star_rating INT,
+  phone_number VARCHAR(20),
+  email VARCHAR(255),
+  website VARCHAR(255),
+  amenities TEXT
+);
+
+
+CREATE TABLE cab (
+  cab_id INT PRIMARY KEY AUTO_INCREMENT,
+  cab_type VARCHAR(50),
+  make VARCHAR(50),
+  model VARCHAR(50),
+  city varchar(50),
+  country varchar(50),
+  color VARCHAR(50),
+  license_plate VARCHAR(20),
+  driver_name VARCHAR(255),
+  driver_contact VARCHAR(20),
+  status VARCHAR(20)  -- Available, Occupied, In-Service, Out-of-Service
 );
