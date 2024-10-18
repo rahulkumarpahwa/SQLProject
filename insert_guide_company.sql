@@ -1,5 +1,4 @@
 -- Insert into guide company.
--- Dummy data for guide_company
 INSERT INTO guide_company (guide_company_name, guide_company_experience, guide_company_address, social_media_links, guide_company_description, mobile_number, email, website, rating)
 VALUES 
 ('Heritage Guides', 10, '123 Heritage St, Old City, Delhi', 'fb.com/heritageguides', 'Expert guides with in-depth knowledge of historical sites.', '9876543210', 'info@heritageguides.in', 'heritageguides.in', 4.5),
