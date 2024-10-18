@@ -1,37 +1,28 @@
--- Refered tab
-
-
--- TempleGuides (Many-to-Many Relationship)
-CREATE TABLE temple_guide_company (
-    temple_id INT,
+-- Many-to-Many Relationship between Pilgrimages and Guide Companies
+CREATE TABLE pilgrimage_guide_company (
+    pilgrimage_id INT,
     guide_company_id INT,
-    PRIMARY KEY (temple_id, guide_company_id),
-    FOREIGN KEY (temple_id) REFERENCES temples(temple_id),
+    PRIMARY KEY (pilgrimage_id, guide_company_id),
+    FOREIGN KEY (pilgrimage_id) REFERENCES pilgrimage(pilgrimage_id),
     FOREIGN KEY (guide_company_id) REFERENCES guide_company(guide_company_id)
 );
 
-
-
--- TempleReviews (One-to-Many Relationship)
-CREATE TABLE temple_reviews (
+-- One-to-Many Relationship between Pilgrimages and Reviews
+CREATE TABLE pilgrimage_reviews (
     review_id INT PRIMARY KEY AUTO_INCREMENT,
-    temple_id INT,
+    pilgrimage_id INT,
     reviewer_name VARCHAR(255),
     review_text TEXT,
     rating INT,
-    FOREIGN KEY (temple_id) REFERENCES temples(temple_id)
+    FOREIGN KEY (pilgrimage_id) REFERENCES pilgrimage(pilgrimage_id)
 );
 
--- TempleEvents (One-to-Many Relationship)
-CREATE TABLE temple_events (
+-- One-to-Many Relationship between Pilgrimages and Events
+CREATE TABLE pilgrimage_events (
     event_id INT PRIMARY KEY AUTO_INCREMENT,
-    temple_id INT,
+    pilgrimage_id INT,
     event_name VARCHAR(255),
     event_date DATE,
     event_description TEXT,
-    FOREIGN KEY (temple_id) REFERENCES temples(temple_id)
+    FOREIGN KEY (pilgrimage_id) REFERENCES pilgrimage(pilgrimage_id)
 );
-
-
-
-
