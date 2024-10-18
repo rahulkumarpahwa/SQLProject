@@ -1,3 +1,2 @@
 Create database if not exists Tourism;
-
-use tourism;
+use Tourism;
