@@ -1,4 +1,5 @@
-SELECT Customers.City, COUNT(*) AS TotalOrders
+-- Description : This query groups the customers by their city and counts the number of customers in each city.
+
+SELECT Customers.City, COUNT(*) AS TotalCustomers
 FROM Customers
-JOIN Orders ON Customers.CustomerID = Orders.CustomerID
 GROUP BY Customers.City;
