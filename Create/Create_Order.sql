@@ -4,4 +4,4 @@ CREATE TABLE Orders (
     OrderDate DATE,
     TotalAmount DECIMAL(10,2),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
-);0
+);
