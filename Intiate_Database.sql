@@ -1,3 +1,3 @@
-Create Database SalesDataDB;
+Create Database Project;
 
-use SalesDataDB;
+use Project;
