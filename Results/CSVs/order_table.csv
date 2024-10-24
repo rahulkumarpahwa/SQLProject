@@ -1,6 +1,0 @@
-"OrderID","CustomerID","OrderDate","TotalAmount","PaymentMethod","ShippingAddress","OrderStatus","CreatedAt"
-1,1,"2024-01-15T00:00:00.000Z",150.75,"Credit Card","123 Marine Drive, Mumbai","Shipped",1729648782000
-2,2,"2024-01-16T00:00:00.000Z",99.99,"PayPal","456 CP Road, Delhi","Processing",1729648782000
-3,3,"2024-01-17T00:00:00.000Z",200.5,"Debit Card","789 Park Street, Kolkata","Delivered",1729648782000
-4,4,"2024-01-18T00:00:00.000Z",75.25,"Net Banking","101 T Nagar, Chennai","Cancelled",1729648782000
-5,5,"2024-01-19T00:00:00.000Z",180,"Credit Card","202 MG Road, Bangalore","Delivered",1729648782000
