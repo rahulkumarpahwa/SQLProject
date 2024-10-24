@@ -6,7 +6,6 @@ CREATE TABLE Customers (
     Email VARCHAR(100),
     PhoneNumber VARCHAR(15),
     DateOfBirth DATE,
-    Gender VARCHAR(10),
     Address VARCHAR(255),
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
