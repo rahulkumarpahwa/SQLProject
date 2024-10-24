@@ -1,5 +1,4 @@
--- Description : This query groups the customers by their city and counts the number of customers in each city.
-
-SELECT Customers.City, COUNT(*) AS TotalCustomers
-FROM Customers
-GROUP BY Customers.City;
+SELECT p.pilgrimage_name, COUNT(pe.event_id) AS event_count
+FROM pilgrimage p
+LEFT JOIN pilgrimage_events pe ON p.pilgrimage_id = pe.pilgrimage_id
+GROUP BY p.pilgrimage_name;

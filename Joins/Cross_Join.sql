@@ -1,5 +1,14 @@
--- Description : This query returns every possible combination of customers and orders, regardless of whether there is a relationship between them. This is often used for specific scenarios like generating all possible combinations for a recommendation system.
-
-SELECT Customers.FirstName, Orders.OrderDate
-FROM Customers
-CROSS JOIN Orders;
+SELECT 
+    p.pilgrimage_id,
+    p.pilgrimage_name,
+    pe.event_id,
+    pe.event_name,
+    pr.review_id,
+    pr.review_text,
+    pr.rating
+FROM 
+    pilgrimage p
+CROSS JOIN 
+    pilgrimage_events pe
+CROSS JOIN 
+    pilgrimage_reviews pr;

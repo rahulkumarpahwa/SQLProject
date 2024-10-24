@@ -1,0 +1,4 @@
+SELECT p.pilgrimage_name, e.event_name
+FROM pilgrimage p
+JOIN pilgrimage_events e ON p.pilgrimage_id = e.pilgrimage_id
+WHERE e.event_name LIKE '%Festival%';
