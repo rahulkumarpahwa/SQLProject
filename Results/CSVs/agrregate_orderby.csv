@@ -1,0 +1,6 @@
+"CustomerID","FirstName","LastName","City","Email","PhoneNumber","DateOfBirth","Gender","Address","CreatedAt"
+4,"Priya","Iyer","Chennai","priya.iyer@example.com","9876543213","1987-11-25T00:00:00.000Z","Female","101 T Nagar, Chennai",1729648584000
+5,"Raj","Kapoor","Bangalore","raj.kapoor@example.com","9876543214","1992-01-30T00:00:00.000Z","Male","202 MG Road, Bangalore",1729648584000
+1,"Ravi","Patel","Mumbai","ravi.patel@example.com","9876543210","1985-07-20T00:00:00.000Z","Male","123 Marine Drive, Mumbai",1729648584000
+2,"Anjali","Sharma","Delhi","anjali.sharma@example.com","9876543211","1990-12-05T00:00:00.000Z","Female","456 CP Road, Delhi",1729648584000
+3,"Amit","Verma","Kolkata","amit.verma@example.com","9876543212","1982-03-17T00:00:00.000Z","Male","789 Park Street, Kolkata",1729648584000
