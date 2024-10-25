@@ -1,3 +1,5 @@
-SELECT pilgrimage_id FROM pilgrimage
+SELECT pilgrimage_id
+FROM pilgrimage
 INTERSECT
-SELECT pilgrimage_id FROM pilgrimage_reviews;
+SELECT pilgrimage_id
+FROM pilgrimage_reviews;

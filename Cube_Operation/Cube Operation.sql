@@ -1,0 +1,7 @@
+SELECT p.religion,
+    pe.event_name,
+    AVG(pr.rating) AS average_rating
+FROM pilgrimage p
+    JOIN pilgrimage_events pe ON p.pilgrimage_id = pe.pilgrimage_id
+    JOIN pilgrimage_reviews pr ON p.pilgrimage_id = pr.pilgrimage_id
+GROUP BY CUBE (p.religion, pe.event_name);
