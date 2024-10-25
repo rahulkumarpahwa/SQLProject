@@ -1,2 +1,4 @@
-SELECT SUBSTRING(pr.review_content, 1, 100) AS short_review
-FROM pilgrimage_reviews pr;
+SELECT 
+    SUBSTRING(pr.review_text, 1, 100) AS short_review
+FROM 
+    pilgrimage_reviews pr;
