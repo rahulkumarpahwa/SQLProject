@@ -19,4 +19,3 @@ CREATE TABLE pilgrimage (
     categories VARCHAR(123),
     registration_required VARCHAR(123)
 );
-

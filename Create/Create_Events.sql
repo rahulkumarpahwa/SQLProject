@@ -6,4 +6,3 @@ CREATE TABLE pilgrimage_events (
     event_description TEXT,
     FOREIGN KEY (pilgrimage_id) REFERENCES pilgrimage(pilgrimage_id)
 );
-
