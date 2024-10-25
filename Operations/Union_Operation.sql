@@ -1,5 +1,3 @@
--- Description : This query will return a list of all unique CustomerID values that appear in either the Customers or Orders table.
-
-SELECT CustomerID FROM Customers
+SELECT pilgrimage_name AS name FROM pilgrimage
 UNION
-SELECT CustomerID FROM Orders;
+SELECT event_name AS name FROM pilgrimage_events;

@@ -1,5 +1,3 @@
--- Description : This query will return only the CustomerID values that appear in both the Customers and Orders tables. 
-
-SELECT CustomerID FROM Customers
+SELECT pilgrimage_id FROM pilgrimage
 INTERSECT
-SELECT CustomerID FROM Orders;
+SELECT pilgrimage_id FROM pilgrimage_reviews;

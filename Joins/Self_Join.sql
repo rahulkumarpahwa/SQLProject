@@ -1,5 +1,16 @@
--- Description : This query finds all pairs of customers where the first customer's ID is less than the second customer's ID. This can be used for various purposes, such as finding customer hierarchies or relationships.
-
-SELECT c1.FirstName, c2.FirstName
-FROM Customers c1
-JOIN Customers c2 ON c1.CustomerID < c2.CustomerID;
+SELECT 
+    p.pilgrimage_name,
+    p.city,
+    p.state,
+    e.event_name,
+    e.event_date,
+    r.review_text,
+    r.rating
+FROM 
+    pilgrimage p
+LEFT JOIN 
+    pilgrimage_events e ON p.pilgrimage_id = e.pilgrimage_id
+LEFT JOIN 
+    pilgrimage_reviews r ON p.pilgrimage_id = r.pilgrimage_id
+ORDER BY 
+    p.pilgrimage_name;
