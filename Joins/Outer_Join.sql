@@ -1,4 +1,4 @@
---FULL OUTER JOIN
+-- Full Join
 SELECT p.pilgrimage_name,
     p.city,
     p.state,
@@ -19,13 +19,14 @@ SELECT p.pilgrimage_name,
     r.rating
 FROM pilgrimage_events e
     LEFT JOIN pilgrimage p ON p.pilgrimage_id = e.pilgrimage_id
-    LEFT JOIN pilgrimage_reviews r ON e.pilgrimage_id = r.pilgrimage_id;
---LEFT OUTER JOIN
+    LEFT JOIN pilgrimage_reviews r ON e.pilgrimage_id = r.pilgrimage_id
+WHERE p.pilgrimage_id IS NULL;
+-- Left Outer Join
 SELECT p.pilgrimage_name,
     pe.event_name
 FROM pilgrimage p
     LEFT JOIN pilgrimage_events pe ON p.pilgrimage_id = pe.pilgrimage_id;
---RIGHT OUTER JOIN
+-- Right Outer join
 SELECT p.pilgrimage_name,
     pe.event_name
 FROM pilgrimage p
