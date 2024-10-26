@@ -1,1 +1,1 @@
-Select * from pilgrimage;
+Select * from pilgrimage ;
