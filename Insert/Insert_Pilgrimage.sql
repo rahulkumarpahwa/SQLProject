@@ -144,8 +144,7 @@ VALUES (
         'Zoroastrianism',
         'Zoroastrian Temples',
         'No'
-    );
-),
+    ),
 (
     7,
     'Gurdwara Sahib Dasmesh Darbar',
